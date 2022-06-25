@@ -1,0 +1,5 @@
+FROM java:8
+WORKDIR /
+COPY target/DOCKER_TEST.jar .
+EXPOSE 9090
+CMD java -jar DOCKER_TEST.jar
